@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="kontakt" />
+    <meta property="og:description" content="Kontakt oss">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itstud.hiof.no/~sebastmn/nettside/kontakt.html" />
+    <meta property="og:image" content="https://itstud.hiof.no/~sebastmn/nettside/bildebank/webstacks-WbOR54pzvLM-unsplash.jpg" />
+    <meta name="twitter:title" content="kontakt">
+    <meta name="twitter:description" content="kontakt oss">
+    <meta name="twitter:image" content="https://itstud.hiof.no/~sebastmn/nettside/bildebank/webstacks-WbOR54pzvLM-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="icon" href="bildebank/Logoapp.png">
+    
+
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Kontakt</title>
+<!--Kart lagt til med hjelp av https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-javascript-->
+    <script>
+        function initMap() {
+  const hiof = { lat: 59.129074, lng: 11.353687 };
+  
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 17,
+    center: hiof,
+  });
+  const marker = new google.maps.Marker({
+    position: hiof,
+    map: map,
+  });
+}
+
+window.initMap = initMap;
+
+    </script>
+</head>
+<body>
+    <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v15.0" nonce="Zl7Vx0k7"></script>
+    <div id="grid-container">
+
+        <header>
+            <a href="Hjem.html"><img src="bildebank/LOGO.jpg" alt="Logo bilde" width="180" height="80"></a>
+        </header>
+    
+        <nav>
+            <ol>
+              <li> 
+                 <a href="Hjem.html" class="button">Hjem</a>
+              </li>
+              <li>
+                 <a href="UUvsSEO.html" class="button">UU vs SEO</a>
+              </li>
+              <li>
+                 <a href="CMS.html" class="button">CMS</a>
+              </li>
+              <li>
+                 <a href="Analyse.html" class="button">Analyse</a>
+              </li>
+              <li>
+                 <a href="Kontakt.html" class="button">Kontakt oss</a>
+              </li>
+            </ol>
+        </nav>
+        <main>
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <article>
+            <h3>Finn oss her:</h3>
+            <div id="map"></div>
+            </article>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+            defer>
+            </script>
+            <article>
+            <h3>Kontakt oss:</h3>
+            <!--Form lagt til med hjelp av https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_text-->
+            <form>
+                <div>
+                <label for="fname">Fornavn:</label><br>
+                <input type="text" id="fname" name="fname" value="Ola"><br>
+                </div>
+                <div>
+                <label for="ename">Etternavn:</label><br>
+                <input type="text" id="ename" name="ename" value="Nordmann">
+                </div>
+                <div>
+                <label for="epost">E-post:</label><br>
+                <input type="text" id="epost" name="epost" value="ola.nordmann@gmail.com"><br>
+                </div>
+                <div>
+                <label for="feedback">Tilbakemelding:</label><br>
+                <input type="text" id="feedback" name="feedback" value="Tilbakemelding her">
+                </div>
+                <p>Du kan eventuelt sende E-post til <i class="fa-solid fa-envelope"></i> postmottak@hiof.no 
+                    Eller kontakt oss på tlf:<i class="fa-solid fa-phone"></i> 69 60 80 00</p>
+              </form>
+                <a class="buttonA">Send melding</a>
+            </article>
+        </main>
+     <!--
+        <aside>
+            <a href="kontakt.html" class="buttonA">Kontakt oss her</a>
+        </aside>
+     -->
+        <footer>
+            <!--Facebook delingsknapp er lagt til med hjelp av https://developers.facebook.com/docs/plugins/share-button/-->
+            <div class="fb-share-button" data-href="https://itstud.hiof.no/~sebastmn/nettside/Hjem.html" data-layout="button" data-size="small"><a target="_blank" 
+                href="https://itstud.hiof.no/~sebastmn/nettside/Hjem.html" 
+                class="fb-xfbml-parse-ignore">Del</a></div>
+                <!--Tweet knapp lagt til med hjelp av https://publish.twitter.com/?buttonType=TweetButton&widget=Button-->
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </footer>
+    </div>
+</body>
+</html>
