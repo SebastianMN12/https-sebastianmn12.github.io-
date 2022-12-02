@@ -20,7 +20,7 @@
     <link href="font/css/brands.css" rel="stylesheet">
     <link href="font/css/solid.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Analyse</title>
 </head>
 <body>
@@ -56,8 +56,6 @@
             <img src="bildebank/Screenshot 2022-12-02 020602.png" width="100%" height="100%" alt="placeholder bilde">
             <p>Jeg har analysert nettsiden med hjalp av <a href="https://developer.chrome.com/docs/lighthouse/overview/">Google lighthouse utvidelsen.</a>
             I følge lighthouse, så gir den nettsiden en høy score på accesibility, søkemotoroptimalisering og på performance. </p>
-            
-            
             <img src="bildebank/Screenshot 2022-12-02 020717.png" width="100%" height="100%" alt="placeholder bilde">
             <p></p>
             </article>
@@ -65,6 +63,20 @@
             <img src="bildebank/Screenshot 2022-12-02 073231.png" width="100%" height="100%" alt="placeholder bilde">
             <p>Ifølge <a href="https://gtmetrix.com/">gtmetrix</a> så har siden min god ytelse men litt problemer med Cumulative Layout Shift</p>
             </article>
+            <div class="table">
+                <div class="table-row">
+                  <div class="table-cell">Ting som må rettes</div>
+                  <div class="table-cell">Hva jeg rettet</div>
+                </div>
+                <div class="table-row">
+                  <div class="table-cell">Problemer med Cumulative Layout Shift</div>
+                  <div class="table-cell">Jeg var nødt til å legge til height og width på bilder for å optimalisere dette</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">Image element do not have explicit width and height </div>
+                    <div class="table-cell">Dette fikset jeg også med å legge til width og height på bildene på nettsiden</div>
+                </div>
+            </div>
             <p>Link til <a href="sjekkliste.pdf">tilgjengelighetserklæring</a></p>
         </main>
         <aside>
